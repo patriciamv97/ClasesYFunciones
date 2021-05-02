@@ -1,6 +1,6 @@
 package seleccionFutbol
 
-open abstract class Seleccion  {
+abstract class Seleccion  {
 
     var id :Int = 0
     var nome: String =""
@@ -19,5 +19,12 @@ open abstract class Seleccion  {
         return "Seleccion(id=$id, nome='$nome', apelido='$apelido', edade=$edade)"
     }
 
+     abstract fun concentrarse(): String
+
+     open fun viaxa():String="Viaxa a Seleccion"
+
+    fun metodoSueprclase(){
+        println("Metodo da superclase para comprobar si lo puedo llamar desde una subclase")
+    }
 
 }

@@ -12,6 +12,12 @@ fun main(args: Array<String>) {
 
     //Los metodos de acceso getters y setters son autogenerados para nosotros por el compilador Kotlin.
 
+    //Getter
+    println(xogador.nome)
+    //Setter
+    xogador.nome="Pepito"
+    //Comprobamos que se modifico el nombre
+    println(xogador.nome)
 
     /*Llamar al metodo concentrase desde los distintos objetos,
       los metodos devuelven la misma frase (por que le puse la misma frase) pero no son los mismos

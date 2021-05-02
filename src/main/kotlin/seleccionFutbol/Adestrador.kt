@@ -13,7 +13,11 @@ class Adestrador : Seleccion {
         this.idFederacion = idFederacion
     }
 
-    override fun concentrarse(): String ="Concentrase a seleccion e o tempo de concentracion"
+    override fun concentrarse(): String {
+        println("Introduce el tiempo de concentración")
+        val tempo = readLine()!!
+        println("Concentrarse a seleccion durante $tempo horas")
+        return tempo}
 
     override fun viaxa(): String {
         println("Pais destino")

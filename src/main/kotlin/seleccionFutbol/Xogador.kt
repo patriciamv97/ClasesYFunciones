@@ -1,5 +1,7 @@
 package seleccionFutbol
 
+import javax.swing.JOptionPane
+
 class Xogador : Seleccion {
     var dorsal :Int = 0
     var demarcacion: String =""
@@ -18,7 +20,12 @@ class Xogador : Seleccion {
     constructor(id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade)
 
 
-    override fun concentrarse(): String ="Concentrase a seleccion e o tempo de concentracion"
+    override fun concentrarse(): String {
+        println("Introduce el tiempo de concentración")
+        val tempo = readLine()!!
+        println("Concentrarse a seleccion durante $tempo horas")
+        return tempo
+    }
 
     override fun viaxa(): String {
         println("Pais destino")
